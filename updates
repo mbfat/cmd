@@ -1,0 +1,35 @@
+https://www.itechtics.com/run-windows-update-cmd/
+
+EASY WAY
+Open the Run dialog (Windows key + R) or open Windows Search and run the following command:
+control update
+
+
+
+MORE WAYS
+
+RestartDevice – Restart Windows after updates are installed
+
+ScanInstallWait – Check for updates, download available updates and install them
+
+    Press the Windows key + R to open Run dialog.
+    Type cmd and then press Ctrl + Shift + Enter to open the command prompt in administrative mode.
+    Run the following command to check for new updates:
+    wuauclt /detectnow 
+    Run the following command to install new updates
+    wuauclt /updatenow
+    
+Since the command prompt does not show any progress, a better approach would be to check and install updates at the same time. Here’s the command for this:
+wuauclt /detectnow /updatenow
+
+
+
+
+
+
+
+
+
+
+
+
